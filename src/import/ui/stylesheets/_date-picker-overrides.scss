@@ -1,0 +1,192 @@
+//datapicker custom styles
+.react-date-picker {
+    width: 100%;
+  }
+  .react-date-picker__calendar {
+    width: $fs-304px !important;
+    max-width: $fs-304px !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+  }
+  .react-calendar__navigation {
+    height: $fs-56px !important;
+    margin-bottom: 0;
+    border-bottom: $fs-1px solid #ddd;
+  }
+  .react-calendar__navigation button {
+    min-width: $fs-32px !important;
+    background: none !important;
+    font-size: $fs-14px;
+    font-family: $avenir-light;
+    color: #000;
+    @include setFont(normal, normal, normal, normal, center);
+  }
+  .react-date-picker__button__input {
+    padding: 0 $fs-14px !important;
+    font-family: $avenir-medium;
+  }
+  .react-date-picker__button {
+    display: flex;
+    border: $fs-1px solid #ddd;
+    height: auto;
+    font-size: $fs-14px;
+    border-radius: $fs-2px;
+    background-color: $white;
+    width: auto;
+    padding: 0 $fs-4px !important;
+  }
+  .react-date-picker__button__icon {
+    width: $fs-32px;
+    &:focus {
+      outline: none !important;
+    }
+  }
+  .react-date-picker__button__input__input {
+    &:invalid {
+      outline: none !important;
+      background-color: transparent;
+    }
+    &:focus {
+      outline: none !important;
+      outline-offset: 0 !important;
+    }
+  }
+  .react-calendar__month-view__weekdays__weekday {
+    font-family: $avenir-light;
+    font-size: $fs-10px;
+    color: $black;
+  }
+  .react-calendar__tile {
+    font-family: $avenir-medium !important;
+    font-size: $fs-14px;
+  }
+  .react-date-picker__calendar .react-calendar {
+    border-radius: $fs-5px;
+    box-shadow: 0 $fs-10px $fs-20px 0 #ddd;
+    background-color: $white;
+    border: solid $fs-2px #ddd;
+    width: $fs-304px;
+  }
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: $black;
+  }
+  .react-calendar__month-view__days__day--weekend {
+    color: #000;
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #ddd!important;
+    color: $black;
+  }
+  button.react-calendar__tile--active:enabled:hover,
+  button.react-calendar__tile--active:enabled:focus {
+    background-color: #ddd!important;
+    color: $black;
+  }
+  button.react-calendar__tile:enabled:hover,
+  button.react-calendar__tile:enabled:focus {
+    background-color: #ddd!important;
+    color: $black;
+  }
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color:  #ddd !important;
+    color: $white !important;
+  }
+  .react-calendar__tile--hasActive {
+    background-color: #ddd!important;
+    color: $black;
+  }
+  .react-calendar__navigation button[disabled] {
+    background-color: transparent !important;
+  }
+  .react-calendar__month-view {
+    @include setPadding($fs-12px, $fs-12px, $fs-12px, $fs-12px);
+  }
+  .react-calendar__year-view .react-calendar__tile,
+  .react-calendar__decade-view .react-calendar__tile,
+  .react-calendar__century-view .react-calendar__tile {
+    @include setPadding($fs-20px, $fs-8px, $fs-20px, $fs-8px);
+  }
+  .react-calendar__month-view__days__day {
+    border-radius: 50%;
+    @include setPadding(0, 0, 0, 0);
+    height: $fs-40px;
+  }
+  .react-date-picker__clear-button svg {
+    width: $fs-15px !important;
+    height: $fs-40px !important;
+  }
+  .react-date-picker__clear-button svg g {
+    stroke: #ddd;
+    &:focus {
+      outline: none !important;
+    }
+  }
+  .react-date-picker__calendar-button{
+   .fa-calendar{
+    &:before{
+      line-height: $fs-40px !important;
+    }
+   }
+  }
+  
+  .react-date-picker__wrapper{
+    display: flex;
+    border: $fs-1px solid #ddd;
+    height: $fs-40px;
+    font-size: $fs-14px;
+    border-radius: $fs-4px;
+    background-color: $white;
+    width: 100%;
+    @include setPadding(0, $fs-8px, 0, $fs-8px);
+  }
+  
+  .react-date-picker__inputGroup__input{
+    width: 1rem;
+    text-align: center;
+    &:focus{
+      outline: none !important;
+    }
+  }
+  
+  
+  //react date time picker css
+  .react-datetime-picker{
+   width: 100% !important;
+   min-height: $fs-40px !important;
+  } 
+  .react-datetime-picker__calendar .react-calendar {
+    border-radius: $fs-5px;
+    box-shadow: 0 $fs-10px $fs-20px 0 #fff;
+    background-color: $white;
+    border: solid $fs-2px #000;
+    width: $fs-304px;
+  }
+  .react-datetime-picker__wrapper {
+    width: 100% !important;
+    border: solid $fs-1px #fff !important;
+    font-size: $fs-14px !important;
+    border-radius: $fs-2px !important;
+    background-color: $white !important;
+  }
+  .react-datetime-picker__inputGroup {
+    @include setPadding(0 !important, $fs-12px !important, 0 !important, $fs-10px !important);
+  }
+  .react-datetime-picker__button svg{
+    stroke: $bright-turquoise;
+    &:focus {
+      outline: none !important;
+    }
+  }
+  .react-datetime-picker__inputGroup__input{
+    &:focus{
+      outline: none !important;
+      background-color: transparent !important;
+    }
+    &:-webkit-autofill{
+      background-color: transparent !important;
+    }
+  }

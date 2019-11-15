@@ -1,0 +1,43 @@
+.internal-page__title {
+  font-family: $avenir-medium;
+  color: $charcoal-grey;
+  @include setFont(500, normal, normal, normal, center);
+  @include setMargin(0, 0, 0, 0);
+  @include setPadding(0, 0, 0, 0);
+}
+
+.internal-section__title {
+  font-family: $avenir-medium;
+  color: $white;
+  @include setFont(normal, normal, normal, normal, left);
+  @include setMargin(0, 0, 0, 0);
+  @include setPadding(0, 0, 0, 0);
+}
+
+.title-black {
+  color: $black;
+}
+
+.title-white {
+  color: $white;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.bg-cream-brulee-yellow {
+  background: $cream-brulee-yellow;
+}
+
+.backgroung-tranparent-black{
+ background-color: $tranparent-black;
+}

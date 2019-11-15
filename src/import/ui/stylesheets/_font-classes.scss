@@ -1,0 +1,73 @@
+@import "fonts";
+@import "colors";
+@import "mixins";
+@import "screen-sizes";
+// To standardize, we can decide before hand like
+
+.no-min-height {
+  min-height: 0 !important;
+}
+//font size override for 12px
+.p-small {
+  font-size: $fs-12px !important;
+  line-height: calc(0.75rem * 1.2) !important;
+}
+
+.p-very-small {
+  font-size: $fs-10px !important;
+  line-height: calc(0.625rem * 1.2) !important;
+}
+
+.p-smallest {
+  font-size: $fs-8px !important;
+  line-height: calc(0.5rem * 1.2) !important;
+}
+
+//font size override for 14px
+.p-medium {
+  font-size: $fs-14px !important;
+  line-height: calc(0.875rem * 1.2) !important;
+}
+//font size overrides
+.p-large {
+  font-size: $fs-19px !important;
+  line-height: calc(1.125rem * 1.2) !important;
+}
+
+.h1-small {
+  font-size: $fs-56px !important;
+  line-height: calc(3.5rem * 1.14) !important;
+}
+.h2-small {
+  font-size: $fs-40px !important;
+  line-height: calc(2.45rem * 1.14) !important;
+}
+.h3-large {
+  font-size: $fs-38px !important;
+  line-height: calc(2.35rem * 1.14) !important;
+}
+
+.h4-medium {
+  font-size: $fs-34px !important;
+  line-height: calc(2.125rem * 1.14) !important;
+}
+
+.h4-small {
+  font-size: $fs-29px !important;
+  line-height: calc(1.8rem * 1.14) !important;
+}
+
+.h5-medium {
+  font-size: $fs-27px !important;
+  line-height: calc(1.6rem * 1.14) !important;
+}
+.h6-medium {
+  font-size: $fs-22px !important;
+  line-height: calc(1.4rem * 1.14) !important;
+}
+
+.input-label {
+  font-size: $fs-14px !important;
+  line-height: calc(0.875rem * 1.14);
+}
+
