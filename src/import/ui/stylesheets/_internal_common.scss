@@ -41,3 +41,65 @@
 .backgroung-tranparent-black{
  background-color: $tranparent-black;
 }
+
+.background-blue-light{
+  background-color: $blue-light;
+}
+
+.background-blue-medium{
+  background-color: $blue-medium;
+}
+
+.fw-800{
+font-weight: 800;
+}
+
+.openSans-bold{
+  font-family: $openSan-bold;
+}
+.weather__report-container{
+  border-radius: 0.55rem;
+    overflow: hidden;
+}
+.weather__report-position{
+  @include setPadding($fs-16px, $fs-16px, $fs-16px, $fs-16px);
+}
+.divider-line{
+  @include setMargin($fs-8px, 0 , $fs-8px, 0);
+  border-color: $gain-boro-white;
+}
+.weather__img-container{
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  margin: auto;
+}
+
+.opacity-6{
+  opacity: 0.6;
+}
+
+.title-grey-light{
+  color: rgb(167, 207, 244) !important;
+}
+
+.table thead tr{
+  background-color: $black;
+  font-family: $openSan-bold;
+  @include setFont(normal, normal, normal, normal, center);
+  @include setMargin(0, 0, 0, 0);
+  @include setPadding(0, 0, 0, 0);
+  th{
+    color: $white;
+  }
+}
+
+.table tbody tr{
+  font-family: $openSan-bold;
+  @include setFont(normal, normal, normal, normal, center);
+  @include setMargin(0, 0, 0, 0);
+  @include setPadding(0, 0, 0, 0);
+  td{
+    color: $black;
+  }
+}

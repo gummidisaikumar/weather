@@ -5,4 +5,9 @@ function toDateFormatYYYYMMDD(date) {
   return moment(date, "YYYY-MM-DD").format("YYYY-MM-DD");
 }
 
-export { toDateFormatYYYYMMDD };
+function toDateStringFormat(date){
+  console.log(moment(date, "YYYY-MM-DD").format('ll'));
+  return moment(date, "YYYY-MM-DD").format('ll');
+}
+
+export { toDateFormatYYYYMMDD, toDateStringFormat };
