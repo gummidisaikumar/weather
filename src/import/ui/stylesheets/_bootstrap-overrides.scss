@@ -22,15 +22,13 @@
   margin-left: auto;
 }
 
-//TODO @chaitanya @ravi, this below style is added to resolve the row flex issue in safari browser
-//Start
+
 .row:before,
 .row:after {
   display: inline-block !important;
 }
 //End
 
-//Overriding bootstrap row & col margins and padding which are in pixel to rem
 /* start */
 .row {
   margin-left: 0;
